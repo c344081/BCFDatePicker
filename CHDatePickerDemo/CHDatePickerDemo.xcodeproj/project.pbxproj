@@ -16,8 +16,8 @@
 		8BCBF6F921F61E7400238F82 /* BCFDatePickerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCBF6F821F61E7400238F82 /* BCFDatePickerDemoTests.m */; };
 		8BCBF70421F61E7400238F82 /* BCFDatePickerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCBF70321F61E7400238F82 /* BCFDatePickerDemoUITests.m */; };
 		8BCBF71821F61F6700238F82 /* PopoverMenuFromSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCBF71221F61F6700238F82 /* PopoverMenuFromSheet.m */; };
-		8BCBF71921F61F6700238F82 /* BCFDatePickerVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCBF71521F61F6700238F82 /* BCFDatePickerVIew.m */; };
-		8BCBF71A21F61F6700238F82 /* BCFDatePickerMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCBF71721F61F6700238F82 /* BCFDatePickerMenu.m */; };
+		8BCBF71921F61F6700238F82 /* CHDatePickerVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCBF71521F61F6700238F82 /* CHDatePickerVIew.m */; };
+		8BCBF71A21F61F6700238F82 /* CHDatePickerMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCBF71721F61F6700238F82 /* CHDatePickerMenu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8BCBF6DC21F61E7100238F82 /* BCFDatePickerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BCFDatePickerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BCBF6DC21F61E7100238F82 /* CHDatePickerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CHDatePickerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCBF6DF21F61E7100238F82 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8BCBF6E021F61E7100238F82 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8BCBF6E221F61E7100238F82 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -48,18 +48,18 @@
 		8BCBF6EB21F61E7400238F82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BCBF6ED21F61E7400238F82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BCBF6EE21F61E7400238F82 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8BCBF6F421F61E7400238F82 /* BCFDatePickerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BCFDatePickerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BCBF6F421F61E7400238F82 /* CHDatePickerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CHDatePickerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCBF6F821F61E7400238F82 /* BCFDatePickerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCFDatePickerDemoTests.m; sourceTree = "<group>"; };
 		8BCBF6FA21F61E7400238F82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8BCBF6FF21F61E7400238F82 /* BCFDatePickerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BCFDatePickerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BCBF6FF21F61E7400238F82 /* CHDatePickerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CHDatePickerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCBF70321F61E7400238F82 /* BCFDatePickerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCFDatePickerDemoUITests.m; sourceTree = "<group>"; };
 		8BCBF70521F61E7400238F82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BCBF71221F61F6700238F82 /* PopoverMenuFromSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverMenuFromSheet.m; sourceTree = "<group>"; };
-		8BCBF71321F61F6700238F82 /* BCFDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCFDatePickerView.h; sourceTree = "<group>"; };
-		8BCBF71421F61F6700238F82 /* BCFDatePickerMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCFDatePickerMenu.h; sourceTree = "<group>"; };
-		8BCBF71521F61F6700238F82 /* BCFDatePickerVIew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCFDatePickerVIew.m; sourceTree = "<group>"; };
+		8BCBF71321F61F6700238F82 /* CHDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHDatePickerView.h; sourceTree = "<group>"; };
+		8BCBF71421F61F6700238F82 /* CHDatePickerMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHDatePickerMenu.h; sourceTree = "<group>"; };
+		8BCBF71521F61F6700238F82 /* CHDatePickerVIew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHDatePickerVIew.m; sourceTree = "<group>"; };
 		8BCBF71621F61F6700238F82 /* PopoverMenuFromSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverMenuFromSheet.h; sourceTree = "<group>"; };
-		8BCBF71721F61F6700238F82 /* BCFDatePickerMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCFDatePickerMenu.m; sourceTree = "<group>"; };
+		8BCBF71721F61F6700238F82 /* CHDatePickerMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHDatePickerMenu.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,10 +90,10 @@
 		8BCBF6D321F61E7100238F82 = {
 			isa = PBXGroup;
 			children = (
-				8BCBF71121F61EAD00238F82 /* BCFDatePicker */,
-				8BCBF6DE21F61E7100238F82 /* BCFDatePickerDemo */,
-				8BCBF6F721F61E7400238F82 /* BCFDatePickerDemoTests */,
-				8BCBF70221F61E7400238F82 /* BCFDatePickerDemoUITests */,
+				8BCBF71121F61EAD00238F82 /* CHDatePicker */,
+				8BCBF6DE21F61E7100238F82 /* CHDatePickerDemo */,
+				8BCBF6F721F61E7400238F82 /* CHDatePickerDemoTests */,
+				8BCBF70221F61E7400238F82 /* CHDatePickerDemoUITests */,
 				8BCBF6DD21F61E7100238F82 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,14 +101,14 @@
 		8BCBF6DD21F61E7100238F82 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8BCBF6DC21F61E7100238F82 /* BCFDatePickerDemo.app */,
-				8BCBF6F421F61E7400238F82 /* BCFDatePickerDemoTests.xctest */,
-				8BCBF6FF21F61E7400238F82 /* BCFDatePickerDemoUITests.xctest */,
+				8BCBF6DC21F61E7100238F82 /* CHDatePickerDemo.app */,
+				8BCBF6F421F61E7400238F82 /* CHDatePickerDemoTests.xctest */,
+				8BCBF6FF21F61E7400238F82 /* CHDatePickerDemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8BCBF6DE21F61E7100238F82 /* BCFDatePickerDemo */ = {
+		8BCBF6DE21F61E7100238F82 /* CHDatePickerDemo */ = {
 			isa = PBXGroup;
 			children = (
 				8BCBF6DF21F61E7100238F82 /* AppDelegate.h */,
@@ -121,47 +121,47 @@
 				8BCBF6ED21F61E7400238F82 /* Info.plist */,
 				8BCBF6EE21F61E7400238F82 /* main.m */,
 			);
-			path = BCFDatePickerDemo;
+			path = CHDatePickerDemo;
 			sourceTree = "<group>";
 		};
-		8BCBF6F721F61E7400238F82 /* BCFDatePickerDemoTests */ = {
+		8BCBF6F721F61E7400238F82 /* CHDatePickerDemoTests */ = {
 			isa = PBXGroup;
 			children = (
 				8BCBF6F821F61E7400238F82 /* BCFDatePickerDemoTests.m */,
 				8BCBF6FA21F61E7400238F82 /* Info.plist */,
 			);
-			path = BCFDatePickerDemoTests;
+			path = CHDatePickerDemoTests;
 			sourceTree = "<group>";
 		};
-		8BCBF70221F61E7400238F82 /* BCFDatePickerDemoUITests */ = {
+		8BCBF70221F61E7400238F82 /* CHDatePickerDemoUITests */ = {
 			isa = PBXGroup;
 			children = (
 				8BCBF70321F61E7400238F82 /* BCFDatePickerDemoUITests.m */,
 				8BCBF70521F61E7400238F82 /* Info.plist */,
 			);
-			path = BCFDatePickerDemoUITests;
+			path = CHDatePickerDemoUITests;
 			sourceTree = "<group>";
 		};
-		8BCBF71121F61EAD00238F82 /* BCFDatePicker */ = {
+		8BCBF71121F61EAD00238F82 /* CHDatePicker */ = {
 			isa = PBXGroup;
 			children = (
-				8BCBF71421F61F6700238F82 /* BCFDatePickerMenu.h */,
-				8BCBF71721F61F6700238F82 /* BCFDatePickerMenu.m */,
-				8BCBF71321F61F6700238F82 /* BCFDatePickerView.h */,
-				8BCBF71521F61F6700238F82 /* BCFDatePickerVIew.m */,
+				8BCBF71421F61F6700238F82 /* CHDatePickerMenu.h */,
+				8BCBF71721F61F6700238F82 /* CHDatePickerMenu.m */,
+				8BCBF71321F61F6700238F82 /* CHDatePickerView.h */,
+				8BCBF71521F61F6700238F82 /* CHDatePickerVIew.m */,
 				8BCBF71621F61F6700238F82 /* PopoverMenuFromSheet.h */,
 				8BCBF71221F61F6700238F82 /* PopoverMenuFromSheet.m */,
 			);
-			name = BCFDatePicker;
-			path = ../BCFDatePicker;
+			name = CHDatePicker;
+			path = ../CHDatePicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8BCBF6DB21F61E7100238F82 /* BCFDatePickerDemo */ = {
+		8BCBF6DB21F61E7100238F82 /* CHDatePickerDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8BCBF70821F61E7400238F82 /* Build configuration list for PBXNativeTarget "BCFDatePickerDemo" */;
+			buildConfigurationList = 8BCBF70821F61E7400238F82 /* Build configuration list for PBXNativeTarget "CHDatePickerDemo" */;
 			buildPhases = (
 				8BCBF6D821F61E7100238F82 /* Sources */,
 				8BCBF6D921F61E7100238F82 /* Frameworks */,
@@ -171,14 +171,14 @@
 			);
 			dependencies = (
 			);
-			name = BCFDatePickerDemo;
+			name = CHDatePickerDemo;
 			productName = BCFDatePickerDemo;
-			productReference = 8BCBF6DC21F61E7100238F82 /* BCFDatePickerDemo.app */;
+			productReference = 8BCBF6DC21F61E7100238F82 /* CHDatePickerDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8BCBF6F321F61E7400238F82 /* BCFDatePickerDemoTests */ = {
+		8BCBF6F321F61E7400238F82 /* CHDatePickerDemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8BCBF70B21F61E7400238F82 /* Build configuration list for PBXNativeTarget "BCFDatePickerDemoTests" */;
+			buildConfigurationList = 8BCBF70B21F61E7400238F82 /* Build configuration list for PBXNativeTarget "CHDatePickerDemoTests" */;
 			buildPhases = (
 				8BCBF6F021F61E7400238F82 /* Sources */,
 				8BCBF6F121F61E7400238F82 /* Frameworks */,
@@ -189,14 +189,14 @@
 			dependencies = (
 				8BCBF6F621F61E7400238F82 /* PBXTargetDependency */,
 			);
-			name = BCFDatePickerDemoTests;
+			name = CHDatePickerDemoTests;
 			productName = BCFDatePickerDemoTests;
-			productReference = 8BCBF6F421F61E7400238F82 /* BCFDatePickerDemoTests.xctest */;
+			productReference = 8BCBF6F421F61E7400238F82 /* CHDatePickerDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		8BCBF6FE21F61E7400238F82 /* BCFDatePickerDemoUITests */ = {
+		8BCBF6FE21F61E7400238F82 /* CHDatePickerDemoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8BCBF70E21F61E7400238F82 /* Build configuration list for PBXNativeTarget "BCFDatePickerDemoUITests" */;
+			buildConfigurationList = 8BCBF70E21F61E7400238F82 /* Build configuration list for PBXNativeTarget "CHDatePickerDemoUITests" */;
 			buildPhases = (
 				8BCBF6FB21F61E7400238F82 /* Sources */,
 				8BCBF6FC21F61E7400238F82 /* Frameworks */,
@@ -207,9 +207,9 @@
 			dependencies = (
 				8BCBF70121F61E7400238F82 /* PBXTargetDependency */,
 			);
-			name = BCFDatePickerDemoUITests;
+			name = CHDatePickerDemoUITests;
 			productName = BCFDatePickerDemoUITests;
-			productReference = 8BCBF6FF21F61E7400238F82 /* BCFDatePickerDemoUITests.xctest */;
+			productReference = 8BCBF6FF21F61E7400238F82 /* CHDatePickerDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -234,7 +234,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8BCBF6D721F61E7100238F82 /* Build configuration list for PBXProject "BCFDatePickerDemo" */;
+			buildConfigurationList = 8BCBF6D721F61E7100238F82 /* Build configuration list for PBXProject "CHDatePickerDemo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -247,9 +247,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8BCBF6DB21F61E7100238F82 /* BCFDatePickerDemo */,
-				8BCBF6F321F61E7400238F82 /* BCFDatePickerDemoTests */,
-				8BCBF6FE21F61E7400238F82 /* BCFDatePickerDemoUITests */,
+				8BCBF6DB21F61E7100238F82 /* CHDatePickerDemo */,
+				8BCBF6F321F61E7400238F82 /* CHDatePickerDemoTests */,
+				8BCBF6FE21F61E7400238F82 /* CHDatePickerDemoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -288,9 +288,9 @@
 			files = (
 				8BCBF6E421F61E7100238F82 /* ViewController.m in Sources */,
 				8BCBF6EF21F61E7400238F82 /* main.m in Sources */,
-				8BCBF71921F61F6700238F82 /* BCFDatePickerVIew.m in Sources */,
+				8BCBF71921F61F6700238F82 /* CHDatePickerVIew.m in Sources */,
 				8BCBF71821F61F6700238F82 /* PopoverMenuFromSheet.m in Sources */,
-				8BCBF71A21F61F6700238F82 /* BCFDatePickerMenu.m in Sources */,
+				8BCBF71A21F61F6700238F82 /* CHDatePickerMenu.m in Sources */,
 				8BCBF6E121F61E7100238F82 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,12 +316,12 @@
 /* Begin PBXTargetDependency section */
 		8BCBF6F621F61E7400238F82 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8BCBF6DB21F61E7100238F82 /* BCFDatePickerDemo */;
+			target = 8BCBF6DB21F61E7100238F82 /* CHDatePickerDemo */;
 			targetProxy = 8BCBF6F521F61E7400238F82 /* PBXContainerItemProxy */;
 		};
 		8BCBF70121F61E7400238F82 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8BCBF6DB21F61E7100238F82 /* BCFDatePickerDemo */;
+			target = 8BCBF6DB21F61E7100238F82 /* CHDatePickerDemo */;
 			targetProxy = 8BCBF70021F61E7400238F82 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -463,7 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = BCFDatePickerDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CHDatePickerDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -479,7 +479,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = BCFDatePickerDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CHDatePickerDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -504,7 +504,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = c344081.BCFDatePickerDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BCFDatePickerDemo.app/BCFDatePickerDemo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CHDatePickerDemo.app/CHDatePickerDemo";
 			};
 			name = Debug;
 		};
@@ -522,7 +522,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = c344081.BCFDatePickerDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BCFDatePickerDemo.app/BCFDatePickerDemo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CHDatePickerDemo.app/CHDatePickerDemo";
 			};
 			name = Release;
 		};
@@ -563,7 +563,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8BCBF6D721F61E7100238F82 /* Build configuration list for PBXProject "BCFDatePickerDemo" */ = {
+		8BCBF6D721F61E7100238F82 /* Build configuration list for PBXProject "CHDatePickerDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8BCBF70621F61E7400238F82 /* Debug */,
@@ -572,7 +572,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8BCBF70821F61E7400238F82 /* Build configuration list for PBXNativeTarget "BCFDatePickerDemo" */ = {
+		8BCBF70821F61E7400238F82 /* Build configuration list for PBXNativeTarget "CHDatePickerDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8BCBF70921F61E7400238F82 /* Debug */,
@@ -581,7 +581,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8BCBF70B21F61E7400238F82 /* Build configuration list for PBXNativeTarget "BCFDatePickerDemoTests" */ = {
+		8BCBF70B21F61E7400238F82 /* Build configuration list for PBXNativeTarget "CHDatePickerDemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8BCBF70C21F61E7400238F82 /* Debug */,
@@ -590,7 +590,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8BCBF70E21F61E7400238F82 /* Build configuration list for PBXNativeTarget "BCFDatePickerDemoUITests" */ = {
+		8BCBF70E21F61E7400238F82 /* Build configuration list for PBXNativeTarget "CHDatePickerDemoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8BCBF70F21F61E7400238F82 /* Debug */,

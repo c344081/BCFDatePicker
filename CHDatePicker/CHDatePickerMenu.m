@@ -1,43 +1,43 @@
 //
-//  GYDatePickerMenu.m
+//  CHDatePickerMenu.m
 //  BCFDatePickerDemo
 //
 //  Created by chenhao on 2018/11/12.
 //  Copyright © 2018 chenhao. All rights reserved.
 //
 
-#import "BCFDatePickerMenu.h"
+#import "CHDatePickerMenu.h"
 
 #define kDatePickerH 172
 #define kTitleViewH 44
 
-@interface BCFDatePickerMenu ()
+@interface CHDatePickerMenu ()
 /** 标题栏 */
 @property (nonatomic, strong) UIToolbar *titleView;
 /** 日期选择器 */
-@property (nonatomic, strong, readwrite) BCFDatePickerView *datePickerView;
+@property (nonatomic, strong, readwrite) CHDatePickerView *datePickerView;
 @end
 
 
-@implementation BCFDatePickerMenu
+@implementation CHDatePickerMenu
 
-+ (instancetype)menuWithCancelHandler:(GYDatePickerCancelHandler)onCancel
-                         onSelectDate:(GYDatePickerConfirmHandler)onSelectDate {
-    return [self menuWithMode:GYDatePickerModeDate onCancel:onCancel onSelectDate:onSelectDate];
++ (instancetype)menuWithCancelHandler:(CHDatePickerCancelHandler)onCancel
+                         onSelectDate:(CHDatePickerConfirmHandler)onSelectDate {
+    return [self menuWithMode:CHDatePickerModeDate onCancel:onCancel onSelectDate:onSelectDate];
 }
 
-+ (instancetype)menuWithSelectDateBlock:(GYDatePickerConfirmHandler)onSelectDate {
++ (instancetype)menuWithSelectDateBlock:(CHDatePickerConfirmHandler)onSelectDate {
     return [self menuWithCancelHandler:nil onSelectDate:onSelectDate];
 }
 
-+ (instancetype)menuWithMode:(GYDatePickerMode)mode onSelectDate:(GYDatePickerConfirmHandler)onSelectDate {
++ (instancetype)menuWithMode:(CHDatePickerMode)mode onSelectDate:(CHDatePickerConfirmHandler)onSelectDate {
     return [self menuWithMode:mode onCancel:nil onSelectDate:onSelectDate];
 }
 
-+ (instancetype)menuWithMode:(GYDatePickerMode)mode
-                    onCancel:(GYDatePickerCancelHandler)onCancel
-                onSelectDate:(GYDatePickerConfirmHandler)onSelectDate {
-    BCFDatePickerMenu *menu = [self.class menu];
++ (instancetype)menuWithMode:(CHDatePickerMode)mode
+                    onCancel:(CHDatePickerCancelHandler)onCancel
+                onSelectDate:(CHDatePickerConfirmHandler)onSelectDate {
+    CHDatePickerMenu *menu = [self.class menu];
     menu.onSelectDate = onSelectDate;
     menu.onCancel = onCancel;
     menu.datePickerMode = mode;
@@ -90,7 +90,7 @@
 
 #pragma mark - setter
 
-- (void)setDatePickerMode:(GYDatePickerMode)datePickerMode {
+- (void)setDatePickerMode:(CHDatePickerMode)datePickerMode {
     _datePickerMode = datePickerMode;
     self.datePickerView.datePickerMode = datePickerMode;
 }
@@ -131,10 +131,10 @@
     return _titleView;
 }
 
-- (BCFDatePickerView *)datePickerView {
+- (CHDatePickerView *)datePickerView {
     if (!_datePickerView) {
-        _datePickerView = [[BCFDatePickerView alloc] init];
-        _datePickerView.datePickerMode = GYDatePickerModeDate;
+        _datePickerView = [[CHDatePickerView alloc] init];
+        _datePickerView.datePickerMode = CHDatePickerModeDate;
     }
     return _datePickerView;
 }

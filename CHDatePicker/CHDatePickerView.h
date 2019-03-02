@@ -1,9 +1,9 @@
 //
-//  GYDatePickerVIew.h
-//  BCFDatePickerDemo
+//  CHDatePickerView.h
+//  CHDatePickerDemo
 //
 //  Created by chenhao on 2019/1/21.
-//  Copyright © 2019 wuhangongyou. All rights reserved.
+//  Copyright © 2019 c344081. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -13,29 +13,29 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  日期选择模式
  */
-typedef NS_ENUM(NSUInteger, GYDatePickerMode) {
-    GYDatePickerModeTime,
+typedef NS_ENUM(NSUInteger, CHDatePickerMode) {
+    CHDatePickerModeTime,
     /**
      选择日期, 年月日
      */
-    GYDatePickerModeDate,
-    GYDatePickerModeDateAndTime,
-    GYDatePickerModeCountDownTimer,
+    CHDatePickerModeDate,
+    CHDatePickerModeDateAndTime,
+    CHDatePickerModeCountDownTimer,
     
     /**
      选择日期, 且仅显示年月
      */
-    GYDatePickerModeDateYM          = 12,
+    CHDatePickerModeDateYM          = 12,
     /**
      选择日期, 且仅显示年
      */
-    GYDatePickerModeDateY           = 13,
+    CHDatePickerModeDateY           = 13,
 };
 
 
-@interface BCFDatePickerView : UIView
+@interface CHDatePickerView : UIView
 
-@property (nonatomic) GYDatePickerMode datePickerMode;
+@property (nonatomic) CHDatePickerMode datePickerMode;
 /** 当前日期, 请务必用getter方法获取*/
 @property (nonatomic, strong) NSDate *date;
 @property (nullable, nonatomic, strong) NSDate *minimumDate;

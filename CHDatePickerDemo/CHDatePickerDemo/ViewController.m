@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "BCFDatePickerMenu.h"
+#import "CHDatePickerMenu.h"
 
 @interface ViewController ()
 
@@ -44,7 +44,7 @@
 - (void)showDatePicker:(id)sender {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     formatter.dateFormat = @"yyyy-MM";
-    __auto_type datePicker = [BCFDatePickerMenu menuWithMode:GYDatePickerModeDateYM onSelectDate:^(NSDate * _Nonnull date) {
+    __auto_type datePicker = [CHDatePickerMenu menuWithMode:CHDatePickerModeDateYM onSelectDate:^(NSDate * _Nonnull date) {
         self.selectedDateLabel.text = [formatter stringFromDate:date];
     }];
     

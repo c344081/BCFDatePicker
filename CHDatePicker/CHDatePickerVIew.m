@@ -1,22 +1,22 @@
 //
-//  GYDatePickerVIew.m
-//  BCFDatePickerDemo
+//  CHDatePickerView.m
+//  CHDatePickerDemo
 //
 //  Created by chenhao on 2019/1/21.
-//  Copyright © 2019 wuhangongyou. All rights reserved.
+//  Copyright © 2019 c344081. All rights reserved.
 //
 
-#import "BCFDatePickerView.h"
+#import "CHDatePickerView.h"
 
 static NSInteger const kYearCount = 10000;
 static NSInteger const kMonthCount = 12;
 static CGFloat const kRowHeight = 32;
 
-static inline BOOL isCustomPickerView(GYDatePickerMode mode) {
+static inline BOOL isCustomPickerView(CHDatePickerMode mode) {
     BOOL isCustom = NO;
     switch (mode) {
-        case GYDatePickerModeDateYM:
-        case GYDatePickerModeDateY:
+        case CHDatePickerModeDateYM:
+        case CHDatePickerModeDateY:
             isCustom = YES;
             break;
         default:
@@ -26,7 +26,7 @@ static inline BOOL isCustomPickerView(GYDatePickerMode mode) {
 }
 
 
-@interface BCFDatePickerView () <UIPickerViewDataSource, UIPickerViewDelegate>
+@interface CHDatePickerView () <UIPickerViewDataSource, UIPickerViewDelegate>
 /** 日期选择器 */
 @property (nonatomic, strong) UIDatePicker *datePicker;
 /** 自定义的选择器 */
@@ -37,7 +37,7 @@ static inline BOOL isCustomPickerView(GYDatePickerMode mode) {
 @end
 
 
-@implementation BCFDatePickerView
+@implementation CHDatePickerView
 
 @synthesize date = _date;
 
@@ -61,13 +61,13 @@ static inline BOOL isCustomPickerView(GYDatePickerMode mode) {
     
     _date = date;
     switch (_datePickerMode) {
-        case GYDatePickerModeTime:
-        case GYDatePickerModeDate:
-        case GYDatePickerModeDateAndTime:
-        case GYDatePickerModeCountDownTimer:
+        case CHDatePickerModeTime:
+        case CHDatePickerModeDate:
+        case CHDatePickerModeDateAndTime:
+        case CHDatePickerModeCountDownTimer:
             [self.datePicker setDate:date animated:animated];
             break;
-        case GYDatePickerModeDateYM: {
+        case CHDatePickerModeDateYM: {
             NSInteger year = [self.datePicker.calendar component:NSCalendarUnitYear fromDate:date];
             NSInteger month = [self.datePicker.calendar component:NSCalendarUnitMonth fromDate:date];
             [self.pickerView reloadAllComponents]; // 刷新ui颜色等
@@ -75,7 +75,7 @@ static inline BOOL isCustomPickerView(GYDatePickerMode mode) {
             [self.pickerView selectRow:month - 1 inComponent:1 animated:animated];
         }
             break;
-        case GYDatePickerModeDateY: {
+        case CHDatePickerModeDateY: {
             NSInteger year = [self.datePicker.calendar component:NSCalendarUnitYear fromDate:date];
             [self.pickerView reloadAllComponents]; // 刷新ui颜色等
             [self.pickerView selectRow:year - 1 inComponent:0 animated:animated];
@@ -117,7 +117,7 @@ static inline BOOL isCustomPickerView(GYDatePickerMode mode) {
     [self setDate:date animated:NO];
 }
 
-- (void)setDatePickerMode:(GYDatePickerMode)datePickerMode {
+- (void)setDatePickerMode:(CHDatePickerMode)datePickerMode {
      // 获取当前date, UIDatePicker更改日期时不会直接更改`_date`变量
     NSDate *date = self.date;
     _datePickerMode = datePickerMode;
@@ -139,10 +139,10 @@ static inline BOOL isCustomPickerView(GYDatePickerMode mode) {
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
     NSInteger components = 0;
     switch (_datePickerMode) {
-        case GYDatePickerModeDateYM:
+        case CHDatePickerModeDateYM:
             components = 2;
             break;
-        case GYDatePickerModeDateY:
+        case CHDatePickerModeDateY:
             components = 1;
             break;
         default:
@@ -154,14 +154,14 @@ static inline BOOL isCustomPickerView(GYDatePickerMode mode) {
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
     NSInteger rowCount = 0;
     switch (_datePickerMode) {
-        case GYDatePickerModeDateYM:
+        case CHDatePickerModeDateYM:
             if (component == 0) { // year
                 rowCount = kYearCount;
             } else if (component == 1) { // month
                 rowCount = kMonthCount;
             }
             break;
-        case GYDatePickerModeDateY:
+        case CHDatePickerModeDateY:
             rowCount = kYearCount;
             break;
         default:
@@ -205,7 +205,7 @@ static inline BOOL isCustomPickerView(GYDatePickerMode mode) {
     }
     
     switch (_datePickerMode) {
-        case GYDatePickerModeDateYM: {
+        case CHDatePickerModeDateYM: {
             NSString *format = component == 0 ? yearFormat : monthFormat;
             title = [NSString stringWithFormat:format , row + 1];
             
@@ -221,7 +221,7 @@ static inline BOOL isCustomPickerView(GYDatePickerMode mode) {
             }
         }
             break;
-        case GYDatePickerModeDateY:
+        case CHDatePickerModeDateY:
             title = [NSString stringWithFormat:yearFormat, row + 1];
             disabled = maximumDate && row + 1 > maximumYear;
             disabled |= minimumDate && row + 1 < minimumYear;
@@ -264,11 +264,11 @@ static inline BOOL isCustomPickerView(GYDatePickerMode mode) {
     NSDateFormatter *formatter = self.dateFormatterYMD;
     
     switch (_datePickerMode) {
-        case GYDatePickerModeDateYM: {
+        case CHDatePickerModeDateYM: {
             if (component == 0 || component == 1) {
                 NSInteger year = [pickerView selectedRowInComponent:0] + 1;
                 NSInteger month = [pickerView selectedRowInComponent:1] + 1;
-                NSDate *date = [formatter dateFromString:[NSString stringWithFormat:@"%ld-%ld-1", year, month]];
+                NSDate *date = [formatter dateFromString:[NSString stringWithFormat:@"%ld-%ld-1", (long)year, (long)month]];
                 if (maximumDate) {
                     if (NSOrderedDescending == [date compare:maximumDate]) {
                         date = maximumDate;
@@ -283,14 +283,14 @@ static inline BOOL isCustomPickerView(GYDatePickerMode mode) {
             }
         }
             break;
-        case GYDatePickerModeDateY: {
+        case CHDatePickerModeDateY: {
                 NSInteger year = row + 1;
                 if (maximumDate && year > maximumYear) {
                     year = maximumYear;
                 } else if (minimumDate && year < minimumYear) {
                     year = minimumYear;
                 }
-                NSDate *date = [formatter dateFromString:[NSString stringWithFormat:@"%ld-1-1", year]];
+                NSDate *date = [formatter dateFromString:[NSString stringWithFormat:@"%ld-1-1", (long)year]];
                 [self setDate:date animated:YES];
         }
             break;
